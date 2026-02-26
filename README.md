@@ -76,23 +76,16 @@ The study covers **7 years of data (2018–2024)** at **3-hour intervals**, tota
 
 ```
 weather-forecast-data/
-├── data/
-│   ├── raw/                          # Downloaded NetCDF files
-│   │   ├── milan_no2_2018_2024.nc
-│   │   ├── milan_co_2018_2024.nc
-│   │   ├── milan_o3_2018_2024.nc
-│   │   ├── milan_pm10_2018_2024.nc
-│   │   └── milan_temp_2018_2024.nc
-│   └── processed/
-│       └── milan_processed_2018_2024.csv   # Clean analysis-ready data
-├── notebooks/
-│   ├── 01_data_download.ipynb        # CDS API data retrieval
-│   ├── 02_data_exploration.ipynb     # xarray → pandas conversion
-│   ├── 03_visualization.ipynb        # Exploratory analysis & plots
-│   └── 04_regression_analysis.ipynb  # Correlation & regression models
-├── scripts/
-│   └── download_cams_data.py         # Automated download script
-└── README.md
+├── Final.ipynb                   # Integrated notebook: Download, Exploration, & Analysis
+├── internship.pdf                # Full internship technical report
+├── milan_air_quality_2018_2024.csv # Final processed dataset (Tabular)
+├── milan_temp_2018_2024.nc       # Raw Temperature data (NetCDF)
+├── milan_pm10_2018_2024.nc       # Raw PM10 data (NetCDF)
+├── milan_no2_2018_2024.nc       # Raw Nitrogen Dioxide data (NetCDF)
+├── milan_o3_2018_2024.nc        # Raw Ozone data (NetCDF)
+├── milan_co_2018_2024.nc        # Raw Carbon Monoxide data (NetCDF)
+├── LICENSE                       # MIT License
+└── README.md                     # Project documentation
 ```
 
 ### Pipeline Overview
