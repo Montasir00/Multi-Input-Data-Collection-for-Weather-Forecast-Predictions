@@ -1,14 +1,14 @@
-# 🌤️ Multi-Input Data Collection for Weather Forecast Predictions
+# Multi-Input Data Collection for Weather Forecast Predictions
 
 An environmental data science internship project analyzing atmospheric composition and air quality in **Milan, Italy (2018–2024)** using satellite-based reanalysis data from the **Copernicus Atmosphere Monitoring Service (CAMS)**.
 
-> **Student:** Fazlur Rahman  
-> **Supervisor:** Prof. Armando Ruggeri  
-> **Program:** Bachelor in Data Analysis — Academic Year 2025/2026
+**Student:** Fazlur Rahman  
+**Supervisor:** Prof. Armando Ruggeri  
+**Program:** Bachelor in Data Analysis — Academic Year 2025/2026
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
@@ -21,7 +21,7 @@ An environmental data science internship project analyzing atmospheric compositi
 
 ---
 
-## 🔍 Project Overview
+## Project Overview
 
 This project focuses on the acquisition, processing, and statistical analysis of large-scale atmospheric datasets to investigate the relationship between **temperature and air pollutant concentrations** in Milan, Italy.
 
@@ -31,36 +31,36 @@ The study covers **7 years of data (2018–2024)** at **3-hour intervals**, tota
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
-1. **Data Acquisition** — Retrieve multi-year atmospheric data using the Copernicus Data Store (CDS) API
-2. **Data Processing** — Clean, convert, and structure time-series data using `xarray` and `pandas`
-3. **Impact Assessment** — Examine bidirectional relationships between temperature and pollutants (including COVID-19 lockdown effects)
-4. **Predictive Modelling** — Build linear regression models to forecast pollutant levels based on temperature
+1. **Data Acquisition** — Retrieve multi-year atmospheric data using the Copernicus Data Store (CDS) API.
+2. **Data Processing** — Clean, convert, and structure time-series data using xarray and pandas.
+3. **Impact Assessment** — Examine bidirectional relationships between temperature and pollutants (including COVID-19 lockdown effects).
+4. **Predictive Modelling** — Build linear regression models to forecast pollutant levels based on temperature.
 
 ---
 
-## 🛰️ Data Source
+## Data Source
 
 **Copernicus Atmosphere Monitoring Service (CAMS) — EAC4 Global Reanalysis Dataset**
 
 | Attribute | Value |
-|---|---|
+| :--- | :--- |
 | Provider | ECMWF / European Space Agency (ESA) |
 | Dataset | CAMS Global Reanalysis (EAC4) |
-| Temporal Coverage | 2018–2024 (dataset goes back to 2003) |
+| Temporal Coverage | 2018–2024 |
 | Temporal Resolution | 3-hourly |
-| Spatial Resolution | 0.75° × 0.75° (~80 km) |
+| Spatial Resolution | 0.75 x 0.75 degrees (~80 km) |
 | File Format | NetCDF (.nc) |
-| Access Method | CDS API (`cdsapi`) |
-| Study Location | Milan, Italy (45.46°N, 9.19°E) |
+| Access Method | CDS API (cdsapi) |
+| Study Location | Milan, Italy (45.46 N, 9.19 E) |
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
-|---|---|
+| :--- | :--- |
 | **Python** | Core programming language |
 | **cdsapi** | Automated data download from Copernicus CDS |
 | **xarray** | Multi-dimensional NetCDF array handling |
@@ -72,18 +72,18 @@ The study covers **7 years of data (2018–2024)** at **3-hour intervals**, tota
 
 ---
 
-## 🔄 Project Structure & Workflow
+## Project Structure & Workflow
 
-```
+```text
 weather-forecast-data/
 ├── Final.ipynb                   # Integrated notebook: Download, Exploration, & Analysis
 ├── internship.pdf                # Full internship technical report
 ├── milan_air_quality_2018_2024.csv # Final processed dataset (Tabular)
 ├── milan_temp_2018_2024.nc       # Raw Temperature data (NetCDF)
 ├── milan_pm10_2018_2024.nc       # Raw PM10 data (NetCDF)
-├── milan_no2_2018_2024.nc       # Raw Nitrogen Dioxide data (NetCDF)
-├── milan_o3_2018_2024.nc        # Raw Ozone data (NetCDF)
-├── milan_co_2018_2024.nc        # Raw Carbon Monoxide data (NetCDF)
+├── milan_no2_2018_2024.nc        # Raw Nitrogen Dioxide data (NetCDF)
+├── milan_o3_2018_2024.nc         # Raw Ozone data (NetCDF)
+├── milan_co_2018_2024.nc         # Raw Carbon Monoxide data (NetCDF)
 ├── LICENSE                       # MIT License
 └── README.md                     # Project documentation
 ```
@@ -98,7 +98,7 @@ CDS API → NetCDF Files → xarray Loading → pandas DataFrame
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 ### Dataset Summary
 
@@ -142,7 +142,7 @@ CDS API → NetCDF Files → xarray Loading → pandas DataFrame
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -214,7 +214,7 @@ df.to_csv('milan_processed_2018_2024.csv', index=False)
 
 ---
 
-## 📋 Dataset Variables
+## Dataset Variables
 
 | Column | Unit | Description |
 |---|---|---|
@@ -227,7 +227,7 @@ df.to_csv('milan_processed_2018_2024.csv', index=False)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Prof. Armando Ruggeri** — For supervision and guidance throughout the internship
 - **Copernicus / ECMWF** — For providing open-access atmospheric reanalysis data via the CAMS EAC4 dataset
